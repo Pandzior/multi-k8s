@@ -22,3 +22,16 @@ after_success:
   - docker push pandzior/multi-nginx
   - docker push pandzior/multi-server
   - docker push pandzior/multi-worker
+
+#deploy:
+#  provider: elasticbeanstalk
+#  region: eu-central-1
+#  app: app name
+#  env: env name
+#  bucket_name: bucket name
+#  bucket_path: bucket path
+#  on:
+#    branch: master
+#  access_key_id: $AWS_ACCESS_KEY
+#  secret_access_key:
+#    secure: $AWS_SECURE_KEY
